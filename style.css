@@ -1,0 +1,68 @@
+
+.header {
+    
+    margin: auto;
+    background-color: rgba(50, 50, 50, 0.2);
+    padding: 10px;
+    padding-left: 10px;
+    line-height: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    max-width: 994px;
+}
+
+#container {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: left;    
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.bundesland-container {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 10px solid rgba(50, 50, 50, 0.2);
+  }
+  
+  @media (min-width: 500px) {
+    .bundesland-container {
+      width: calc(50% - 50px);
+    }
+  }
+  
+  @media (min-width: 800px) {
+    #container {
+      max-width: 1024px;
+      margin: auto;
+    }
+  
+    .bundesland-container {
+      width: calc(33.3333% - 50px);
+    }
+  }
+
+
+.bundesland-container:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#filter-buttons {
+    margin: auto;
+    margin-top: 15px;
+    max-width: 1024px;
+}
+
+#filter-buttons button {
+    width: 30px;
+    margin: 5px;
+    font-weight: bold;
+}
